@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// Exercice 5
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Créez un dossier ReactJS qui s'appelle "exercice5".
+// Supprimez tous les dossiers inutiles.
+// Dans le fichier App.js, supprimez tous et créer une class App avec les extends et imports nécessaires.
+// Créez un nouveau fichiers appelé Header.js
+// Dans ce fichier header, vous allez créer une barre de navigation en JSX et l'importer dans votre fichier App.js
+
+
+import React, {Component} from 'react';
+import Header from './Header';
+
+class App extends Component {
+  render(){
+    return (
+      <Header/>
+    );
+  }
 }
 
 export default App;
